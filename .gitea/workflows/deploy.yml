@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: ischanx/checkout@v4
+        uses: actions/checkout@v4
         with:
           repository: ${{ vars.OWNER }}/${{ vars.REPO }}
           token: ${{ secrets.TOKEN }} # `GH_PAT` is a secret that contains your PAT
